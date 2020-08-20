@@ -42,7 +42,7 @@ attachTodo=()=> {
 // Dark mode function
 darkMode=()=> {
     body.classList.toggle("dark-mode");
-    h1.classList.toggle("dark-mode");
+    h1.classList.toggle("lol");
     userInput.classList.toggle("user");
     welcomeText.classList.toggle("lol");
     addTodoBtn.classList.toggle("user2");
