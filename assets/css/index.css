@@ -94,7 +94,7 @@ ul.todos {
     border-radius: 5px;
 }
 ul.todos li {
-    padding: 5px 30px;
+    padding: 5px 5px 5px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,6 +102,12 @@ ul.todos li {
     margin-top: 20px;
     border: 2px solid #480403;
     background-color: #ffffff;
+}
+ul.todos li:nth-child(odd) {
+    border: 2px solid #FFA987 !important;
+}
+.check {
+    text-decoration: line-through;
 }
 button.del {
     background-color: transparent;
@@ -130,11 +136,14 @@ button.del {
     background-color: #FFA987 !important;
     color: #ffffff !important;
 }
-.lists {
-    border: 2px solid #FFA987 !important;
-    color: black !important;
-    font-weight: 500;
-} 
+span.close {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+span.close:hover {
+    background-color: whitesmoke;
+}
 
 /* Media Queries */
 @media (min-width: 2000px){
